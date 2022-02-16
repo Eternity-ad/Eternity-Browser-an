@@ -31,8 +31,8 @@ class AboutDialog(QDialog):
         logo.setPixmap(QPixmap(os.path.join.('images', 'ma-icon-128.png')))
         layout.addWidget(logo)
 
-        layout.addWidget(QLabel.("Version 5.0"))
-        layout.addWidget(QLabel.("Copyright 2022 Yash Inclusive"))
+        layout.addWidget(QLabel.("Version 0.70.4"))
+        layout.addWidget(QLabel.("Copyright 2022 Eternity"))
 
         for i in range(0, layout.count()):
             layout.itemAt(i).setAlignment(Qt.AlignHCenter)
@@ -328,8 +328,8 @@ class MainWindow(QMainWindow):
         self.tabs.currentWidget().setUrl(QUrl('https://bit.ly/snakegameopbyyash'))
 
 app = QApplication(sys.argv)
-app.setApplicationName("Brave 3X")
-app.setOrganizationName("AlwaysBeeS")
+app.setApplicationName("Eternity Browser")
+app.setOrganizationName("Eternity")
 app.setOrganizationDomain("https://yash.brizy.site/")
 
 window = MainWindow()
